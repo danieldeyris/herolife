@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_mrp_serial_product_mass_produce_wizard" model="ir.ui.view">
+            <field name="name">MRP Serial Product Mass Produce</field>
+            <field name="model">mrp.serial.product.mass.produce</field>
+            <field name="arch" type="xml">
+                <form string="Mass Produce">
+                    <group>
+                        <group>
+                            <field name="production_id" invisible="1"/>
+                            <field name="product_id" readonly="1"/>
+                            <field name="product_qty" readonly="1"/>
+                            <field name="scan_lot" options="{'always_reload': True}"/>
+                            <field name="next_qty"/>
+                            <field name="to_serial_number"/>
+                            <button name="action_generate_lots" type="object" string="Generate" class="btn-primary"/>
+                        </group>
+                        <group>
+                            <field name="file_import" filename="file_import_name"/>
+                            <field name="file_import_name" invisible="1"/>
+                            <button name="action_import_lots" type="object" string="Import" class="btn-primary"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Lot List">
+                            <field name="lots_to_generate" options="{'always_reload': True}">
+                                <tree default_order="is_not_unique desc" create="false" edit="false">
+                                    <field name="product_id" invisible="1"/>
+                                    <field name="lot_name"/>
+                                    <field name="is_not_unique"/>
+                                </tree>
+                                <form>
+                                    <div>Cannot edit record.</div>
+                                    <footer></footer>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button name="do_mass_produce" type="object" string="Record Production" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+</odoo>
