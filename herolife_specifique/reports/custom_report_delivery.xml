@@ -60,7 +60,7 @@
                                 </table>
                             </tbody>
 
-                            <table class="table table-sm" t-if="o.state!='done'" name="stock_move_table">
+                            <table class="clearfix" style="width:100% !important;" t-if="o.state!='done'" name="stock_move_table">
                                 <thead>
                                     <tr>
                                         <th name="th_sm_product"><strong>Product</strong></th>
@@ -83,7 +83,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <table class="table table-sm" t-if="o.move_line_ids and o.state=='done'" name="stock_move_line_table">
+                            <table class="clearfix"  style="width:100% !important;" t-if="o.move_line_ids and o.state=='done'" name="stock_move_line_table">
                                 <t t-set="has_serial_number" t-value="o.move_line_ids.mapped('lot_id')" />
                                 <thead>
                                     <tr>
