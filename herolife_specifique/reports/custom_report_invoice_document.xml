@@ -72,7 +72,7 @@
                                             <span t-field="o.name"/>
                                         </div>
                                         <div t-if="orders">
-                                            <strong>Oders # :</strong>
+                                            <strong>Delivery Note No :</strong>
                                             <span t-esc="orders"/>
                                         </div>
                                         <div t-if="o.partner_id.ref">
