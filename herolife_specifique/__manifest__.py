@@ -13,7 +13,7 @@
     'author': "Phidias",
     'website': "http://www.phidias.fr",
     'category': 'Uncategorized',
-    'version': '13.0.0.0',
+    'version': '13.0.0.1',
 
     # any module necessary for this one to work correctly
     'depends': [
@@ -23,9 +23,10 @@
         'web',
     ],
     "data": [
-        'views/report_templates.xml',
         'reports/custom_report_order_document.xml',
         'views/assets.xml',
         'reports/custom_report_headerfooter_boxed.xml',
+        'reports/custom_report_invoice_document.xml',
+        'reports/custom_report_invoice_document_with_payment.xml',
     ],
 }

@@ -41,7 +41,7 @@
                 text-transform: none !important;
             }
             tr th:first-child {
-                width: 10%;
+                width: auto;
             }
         }
         tbody {
@@ -50,7 +50,7 @@
                 border-top: none;
             }
             tr:last-child td {
-                border-bottom: 3px solid $o-company-secondary-color;
+                border-bottom: none;
             }
             tr {
                 td {
