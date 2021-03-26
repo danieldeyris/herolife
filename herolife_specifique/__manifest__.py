@@ -28,5 +28,6 @@
         'reports/custom_report_headerfooter_boxed.xml',
         'reports/custom_report_invoice_document.xml',
         'reports/custom_report_invoice_document_with_payment.xml',
+        'reports/custom_report_delivery.xml',
     ],
 }
