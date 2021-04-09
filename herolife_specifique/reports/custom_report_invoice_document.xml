@@ -107,26 +107,20 @@
                             <table style="width:100% !important;">
                                 <thead>
                                     <tr>
-                                        <th class="text-left">
-                                            Code
-                                        </th>
-                                        <th class="text-left ">Description</th>
-                                        <th class="text-right">
-                                            Qty
-                                        </th>                                        
-                                        <th class="text-right"  width="10% !important">
-                                            Gross price
-                                        </th>
+                                        <th class="text-left" style="padding-left: 5px !important;">Code</th>
+                                        <th class="text-left " style="padding-left: 5px !important;" width="40%">Description</th>
+                                        <th class="text-right" style="padding-right: 10px !important;">Qty</th>
+                                        <th class="text-right" >Gross price</th>
                                         <th t-if="display_discount" groups="product.group_discount_per_so_line"
-                                            class="text-right"  width="10% !important">
+                                            class="text-right">
                                             <span>Disc.%</span>
                                         </th>
                                         <th t-if="display_discount" groups="product.group_discount_per_so_line"
-                                            class="text-right"  width="10% !important">
+                                            class="text-right" >
                                             <span>Net Price</span>
                                         </th>
                                         <!--                                        <th>Taxes</th>-->
-                                        <th class="text-right"  width="10% !important">
+                                        <th class="text-right" style="padding-right: 18px !important;">
                                             <t groups="account.group_show_line_subtotals_tax_excluded">Total</t>
                                         </th>
                                     </tr>
