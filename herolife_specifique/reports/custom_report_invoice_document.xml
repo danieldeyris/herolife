@@ -109,14 +109,14 @@
                                     <tr>
                                         <th class="text-left" style="padding-left: 5px !important;">Code</th>
                                         <th class="text-left " style="padding-left: 5px !important;" width="40%">Description</th>
-                                        <th class="text-right" style="padding-right: 10px !important;">Qty</th>
-                                        <th class="text-right" >Gross price</th>
+                                        <th class="text-right" style="padding-right: 5px !important;">Qty</th>
+                                        <th class="text-right"  style="padding-right: 5px !important;">Gross price</th>
                                         <th t-if="display_discount" groups="product.group_discount_per_so_line"
-                                            class="text-right">
+                                            class="text-right"  style="padding-right: 5px !important;">
                                             <span>Disc.%</span>
                                         </th>
                                         <th t-if="display_discount" groups="product.group_discount_per_so_line"
-                                            class="text-right" >
+                                            class="text-right"  style="padding-right: 5px !important;">
                                             <span>Net Price</span>
                                         </th>
                                         <!--                                        <th>Taxes</th>-->
